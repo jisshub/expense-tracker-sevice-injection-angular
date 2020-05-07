@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-expense-data',
@@ -11,7 +11,7 @@ export class ExpenseDataComponent implements OnInit {
   @ViewChild("expenseDate", {static: true}) getDate: ElementRef;
   @ViewChild("expenseAmount", {static: true}) getAmount: ElementRef;
 
-  @Output() throwExpenses = new EventEmitter<{description: string, date: string, amount: string}>();
+  // @Output() throwExpenses = new EventEmitter<{description: string, date: string, amount: string}>();
   constructor() { }
 
   ngOnInit(): void {
@@ -19,7 +19,7 @@ export class ExpenseDataComponent implements OnInit {
   }
 
   onSubmit(){
-    this.throwExpenses.emit({description: this.getDesc.nativeElement.value, date: this.getDate.nativeElement.value, amount: this.getAmount.nativeElement.value});
+    // this.throwExpenses.emit({description: this.getDesc.nativeElement.value, date: this.getDate.nativeElement.value, amount: this.getAmount.nativeElement.value});
   }
 
 
