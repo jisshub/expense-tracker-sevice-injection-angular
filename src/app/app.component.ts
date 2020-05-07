@@ -22,15 +22,4 @@ export class AppComponent implements OnInit{
     // assign it ti expenseList defined in the compoenent
     this.expenseList=this.xpenseService.expenseList
   }
-  
-
-  // onFetchExpense(accessData: {description: string, date: string, amount: string} ){
-  //     this.expenseList.push({
-  //       description: accessData.description,
-  //       date: accessData.date,
-  //       amount: accessData.amount
-  //     })
-  //   console.log(this.expenseList);    
-  // }
-  
 }
