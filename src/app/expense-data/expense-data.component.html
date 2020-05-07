@@ -1,0 +1,16 @@
+<div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" #expenseDesc>
+</div>
+<div class="form-group">
+    <label for="date">Date</label>
+    <input type="date" class="form-control" #expenseDate>
+</div>
+<div class="form-group">
+    <label for="amount">Amount</label>
+    <input type="number" class="form-control" #expenseAmount>
+</div>
+<div class="form-group">
+    <button class="btn btn-danger btn-block" (click)="onSubmit()">Add Expense</button>
+</div>
+
