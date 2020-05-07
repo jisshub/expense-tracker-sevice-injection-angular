@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-list-expense',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListExpenseComponent implements OnInit {
 
+  @Input() eachExpense: {description: string, date: string, amount: string}
+  @Input() indexPos: number;
   constructor() { }
 
   ngOnInit(): void {
